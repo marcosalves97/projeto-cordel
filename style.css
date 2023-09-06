@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root {
+    /* Paleta de cores */
+    --cor1: black;
+    --cor2: whitesmoke;
+    /* Paleta de fontes */
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-cordel: 'Rowdies', cursive ; 
+    --fonte-texto: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+header {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: var(--fonte-cordel);
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 5.5vh;
+}
+header a, footer a { 
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+main div {
+    font-family: var(--fonte-texto);
+    font-size: 3.7vh;
+    line-height: 6vh;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
+    padding-left: 3vh;
+}
+
+div p {
+    padding-bottom: 2em;
+}
+
+#paragrafonormal {
+    background-color: whitesmoke;
+}
+
+#paragrafoimagem {
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+#paragrafoimagem2 {
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    color: white;
+}
+.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.801);
+    background-attachment: fixed;
+}
+.imagem p {
+   display: inline-block;
+   padding: 10px;
+   background-color: rgba(75, 73, 73, 0.452);
+   text-shadow: 1px 1px 0px black;  
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
